@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Page Color with Checkbox</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease;
+    }
+    
+    label {
+      margin-left: 10px;
+    }
+    
+    #colorCheckbox {
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <label for="colorCheckbox">light blue</label>
+  <input type="checkbox" id="colorCheckbox">  
+
+  <script>
+    const checkbox = document.getElementById("colorCheckbox");
+
+    checkbox.addEventListener("click", function () {
+      const body = document.querySelector("body");
+      if (checkbox.checked) {
+        body.style.backgroundColor = "lightblue"; 
+      } else {
+        body.style.backgroundColor = ""; 
+      }
+    });
+  </script>
+
+</body>
+</html>

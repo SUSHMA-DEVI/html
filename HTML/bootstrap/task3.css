@@ -1,0 +1,19 @@
+.col-md-2{
+			height: 100px;
+			margin: 1px;
+		}
+		.col-md-8{
+			height: 100px;
+			margin: 1px;
+		}
+		.col-md-6{
+			height: 48px;
+			margin: 1px;
+		}
+		.col-md-12{
+			height: 22px;
+			margin: 1px;
+		}
+		.col-md{
+			margin: 1px;
+		}

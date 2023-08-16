@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- https://technicalhub.io/ -->
+	<style>
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: blue;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+		
+		.{
+			box-sizing: border-box;
+			margin:0;
+			padding: 0;
+		}
+		
+		.slider{
+
+			position: relative;
+			width: 60%;
+			overflow: hidden;
+		}
+		.images{
+			display: flex;
+			width: 100%;
+		}
+		.images img{
+			height: 300px;
+			width: 100%;
+			transition:all 0.15s ease;
+
+		}
+		.images input{
+			display: none;
+		}
+		.dots{
+			display: flex;
+			justify-content: center;
+			margin: 5px;
+		}
+		.dots label{
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+			border:solid black; 3px;
+			cursor: pointer;
+			transition:all 0.15s ease;
+			margin: 5px;
+		}
+		.dots label:hover{background: pink;}
+		#img1:checked ~ .m1{
+			margin-left: 0;
+		}
+		#img2:checked ~ .m2{
+			margin-left: -100%;
+		}
+		#img3:checked ~ .m3{
+			margin-left: -200%;
+		}
+		#img4:checked ~ .m4{
+			margin-left: -400%;
+		}
+		#img5:checked ~ .m5{
+			margin-left: -500%;
+		}
+		#img6:checked ~ .m6{
+			margin-left: -600%;
+		}
+		#img7:checked ~ .m7{
+			margin-left: -700%;
+		}
+		#img8:checked ~ .m8{
+			margin-left: -800%;
+		}
+		#img9:checked ~ .m9{
+			margin-left: -900%;
+		}
+		#img10:checked ~ .m10{
+			margin-left: -1000%;
+		}
+		#img12:checked ~ .m12{
+			margin-left: -100%;
+		}
+		#img13:checked ~ .m13{
+			margin-left: -200%;
+		}
+		#img14:checked ~ .m14{
+			margin-left: -400%;
+		}
+		#img15:checked ~ .m15{
+			margin-left: -500%;
+		}
+		#img16:checked ~ .m16{
+			margin-left: -600%;
+		}
+		#img17:checked ~ .m17{
+			margin-left: -700%;
+		}
+
+		
+	
+</style>
+
+</head>
+<body>
+	<!-- <img src="images/cert.png"height="50"width="50"> -->
+	<div style="height:600px;width:1200px;">
+		<div class="dropdown">
+			<div style="height:150px;width:1200px;">
+				<div style="height:150px;width:600px;float: left;">
+					<img src="images/tech.png">
+				</div>
+				<div style="height:150px;width:600px;float: right;">
+				<ul style="margin: 30px;">
+					
+					<li><a href="">HOME
+
+					</a></li>&nbsp;
+
+					<li class="dropdown">
+						<a href=""class="dropbtn">ACTIONS</a>
+						<div class="dropdown-content">
+							
+							<a href="">T-CONNECT</a>
+							<a href="">MAKER SQUARE</a>
+							<a href="">PROJECT SPACE</a>
+							<a href="">OWL CODER</a>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a href=""class="dropbtn">PATHS</a>
+						<div class="dropdown-content">
+							
+							<a href="">CERTIFICATIONS</a>
+							<a href="">COMPETITIVE CODING</a>
+							<a href="">T-SHAPED ENGINEER</a>
+							<a href="">DRIVE READY</a>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href=""class="dropbtn">ACTIONS</a>
+						<div class="dropdown-content">
+							
+							<a href="">RESUMES</a>
+							<a href="">MOCK INTERVIEWS</a>
+							<a href="">PLACEMENT PORTAL</a>
+							<a href="">INTERNSHIPS</a>
+						</div>
+					</li>
+					<li><a href="">CONTACT</a></li>
+					<li><a href="">TEAM</a></li>
+
+				</ul>
+			</div>
+			</div>
+			</div>
+			<div style="height:450px;width:1200px;background-color: blue;">
+				<img src="images/grow.png" height="450"width="1200">
+			</div>
+			
+		</div>
+
+
+
+
+
+	<br>
+	<div style="height:30px;width:1200px;"><center><h2 style="color:orange;  ;">What we Offer</h2></center></div>
+
+	<div style="height:300px;width: 1200px;">
+		<div style="height:300px;width:400px;float:left;">
+			<div style="height:300px;width:100px;float: left; ">
+				<img src="images/cert.png"height="50"width="50"style="margin:45px 0px 0px 30px;"></div>
+			<div style="height:300px;width:300px;float: right;">
+				<h4>Certification</h4>
+				<p>We offer a wide range of globally recognized certifications from reputed organizations like Cisco, Red Hat, AWS, Microsoft and Automation Anywhere. These certifications are issued directly by the vendor and are accepted worldwide.</p>
+			</div>
+			
+		</div>
+		<div style="height:300px;width:400px;float: left;">
+			<div style="height:300px;width:100px;float: left; ">
+				<img src="images/place.png"height="50"width="50" style="margin:45px 0px 0px 30px;"></div>
+			<div style="height:300px;width:300px;float: right;">
+				<h4>Placements</h4>
+				<p>We regularly conduct mock interviews with the help of experienced professionals. These interviews help prepare our trainees for their future placements and help them analyze and upgrade their skills accordingly.</p>
+			</div>
+			
+		</div>
+		<div style="height:300px;width:400px;float: right;">
+			<div style="height:300px;width:100px;float: left; ">
+				<img src="images/pro.png"height="50"width="50" style="margin:45px 0px 0px 30px;"></div>
+			<div style="height:300px;width:300px;float: right;">
+				<h4>Product Development</h4>
+				<p>Our in-house development team focuses on providing the best to our customers. Whether you're looking for a custom build product or in house automation, our products are guaranteed to help make your work easier.</p>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+
+
+	<br><br>
+	<div style="height:300px;width:1200px;background-color:#f1f1f1">
+		<div style="height:300px;width:700px;float: left;">
+			<div style="height:300px;width:100px;float: left;">
+				<h4 style="writing-mode:vertical-lr; color: orange;margin: 10px 30px 40px 85px">Who we are</h4>
+			</div>
+			<div style="height:300px;width:600px;float: right;">
+				<h1 style="margin:30px 0px 0px 60px;">Technical Hub<h2 style="margin:0px 10px 0px 60px;">
+					#Ready to hire
+				</h2>
+
+				</h1>
+				<p>Founded back on the 3rd of February 2016, our journey has been quite an adventurously successful one. Over time our team has taken up commercial and social projects and developed apps, games, softwares, websites and a whole lot more. Our experienced developers are certified in an array of languages and can handle anything that comes their way.</p>
+				
+			</div>
+		</div>
+		<div style="height:300px;width:500px;float: right;">
+			<center><div style="height:150px;width: 250px; background-color:gold; margin:100px;"><center><iframe width="250" height="150" src="https://www.youtube.com/embed/FWswzxaCG3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="margin: -50px 0px 0px -60px;" ></iframe></center>
+		</div></center>
+				
+
+		</div>
+		
+	</div>
+	<br>
+
+
+
+
+
+	<div style="height:400px;width:1200px;">
+		<div style="height:400px;width: 100px; float: left;"></div>
+		<div style="height:400px;width: 550px; float: left;">
+			<h4 style="color: orange;writing-mode: vertical-lr;margin: 5px;">We can help you</h4>
+			<center><h1 style="margin: -100px 10px 10px -420px;">Get</h1></center>
+			<center><h1 style="margin: -16px 10px 10px -357px;">Certified</h1></center>
+			<br> 
+			<p>Technical Hub provides the trainings which are certification aligned and associated with various vendors that are top in the industry. Members who are part of this program are given a constant practical example on various topics, thus keeping them abreast of their technological world.</p>
+		</div>
+		
+		<div style="height:400px;width: 450px; float: right;">
+			<div class="slider">
+				<div class="images">
+					<input type="radio" name="slide" id="img1" checked>
+					<input type="radio" name="slide" id="img2" checked>
+					<input type="radio" name="slide" id="img3"checked>
+					<input type="radio" name="slide" id="img4"checked>
+					<input type="radio" name="slide" id="img5"checked>
+					<input type="radio" name="slide" id="img6"checked>
+					<input type="radio" name="slide" id="img7"checked>
+					<input type="radio" name="slide" id="img8"checked>
+					<input type="radio" name="slide" id="img9"checked>
+					<input type="radio" name="slide" id="img10"checked>
+					<img  src="images/1.png" class="m1" alt="img1">
+					<img  src="images/2.png" class="m2" alt="img2">
+					<img  src="images/3.png"class="m3" alt="img3">
+					<img  src="images/4.png"class="m4" alt="img4">
+					<img  src="images/5.png"class="m5" alt="img5">
+					<img  src="images/6.png"class="m6" alt="img6">
+					<img  src="images/7.png"class="m7" alt="img7">
+					<img  src="images/8.png"class="m8" alt="img8">
+					<img  src="images/9.png"class="m9" alt="img9">
+					<img  src="images/10.png"class="m10" alt="img10">
+					
+				</div>
+				<div class="dots">
+					<label for="img1"></label>
+					<label for="img2"></label>
+					<label for="img3"></label>
+					<label for="img4"></label>
+					<label for="img5"></label>
+					<label for="img6"></label>
+					<label for="img7"></label>
+					<label for="img8"></label>
+					<label for="img9"></label>
+					<label for="img10"></label>
+				</div>
+			</div>
+		
+	</div>
+</div>
+	<br><br>
+
+
+
+	<center><h1 style="color:orange;">Our Learning path</h1></center>
+	<div style="height:400px;width:1200px; background-color:#f1f1f1">
+		<center>
+			<a href="" style="height: 400px;width: 700px; "><h4 style="margin:-5px">Competitive coding</h4><img src="images/11.png" height="300"width="400" style="margin:50px 10px 10px 50px; float: left;"> </a><h1>Competitive Coding</h1><p style="margin-left: 600px">Technical Hub organizes various trainings and skill enhancement programs that focuses on keeping individuals up to date on various kinds of technology. These program grants everyone a chance to widen their knowledge and skills in various ways. </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><h4 style="margin:-180px 10px 10px -90px;">T-Shaped Engineer</h4></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><h4 style="margin:-45px 10px 10px 850px;">Drive Ready</h4></a>
+		</center>
+	
+			
+		</div>
+		<br><br>
+		<div style="height:400px;width:1200px;">
+		<div style="height:400px;width: 100px; float: left;"></div>
+		<div style="height:400px;width: 550px; float: left;">
+			<h4 style="color: orange;writing-mode: vertical-lr;margin: 5px;">Program</h4>
+			<center><h1 style="margin: -100px 10px 10px -420px;">Our</h1></center>
+			<center><h1 style="margin: -16px 10px 10px -195px;">Innovative Programs</h1></center>
+			<br> 
+			<p>Our creative minds come up with various programs to keep you entertained while you get trained. Some of our most popular programs are mentioned below.</p>
+		</div>
+		<div style="height:400px;width:550px;float: right; ">
+			<div class="slider">
+				<div class="images">
+					<input type="radio" name="slide" id="img12" checked>
+					<input type="radio" name="slide" id="img13" checked>
+					<input type="radio" name="slide" id="img14"checked>
+					<input type="radio" name="slide" id="img15"checked>
+					<input type="radio" name="slide" id="img16"checked>
+					<input type="radio" name="slide" id="img17"checked>
+					<img  src="images/12.png" class="m12" alt="img12">
+					<img  src="images/13.png" class="m13" alt="img13">
+					<img  src="images/14.png"class="m14" alt="img14">
+					<img  src="images/15.png"class="m15" alt="img15">
+					<img  src="images/16.png"class="m16" alt="img16">
+					<img  src="images/17.png"class="m17" alt="img17">
+					
+					
+				</div>
+				<div class="dots">
+					<label for="img12"></label>
+					<label for="img13"></label>
+					<label for="img14"></label>
+					<label for="img15"></label>
+					<label for="img16"></label>
+					<label for="img17"></label>
+					
+				</div>
+			</div>
+		
+	</div>
+		</div>
+
+	</div>
+	<br><br>
+	<center><h1>Updated News</h1><br></center>
+	<div style="height:600px;width:1200px;background-color:#f1f1f1">
+		
+		<div style="height:50px;width:1200px;">
+	<p style="height:50px;width:1200px">Stay tuned to this page to find out what's happening in Technical Hub. You can also check out our social media channels for instant updates.</p>
+		<div style="height:550px;width:1200px;">
+			<div style="height:550px;width:400px; float: left;">
+				<img src="images/b.jpg"><br>
+				<h1>Become coder</h1>
+				<p>Training can emerge in many ways. Sometimes, it’s a simple starting point for a learner to upgrade their skills. Skill up coder stands unique for its intermediate level of solving the coding programs which help them gain the profound knowledge.
+
+</p>
+			</div>
+			<div style="height:550px;width:400px;float: left;">
+				<img src="images/d.jpg">
+				<h1>Drive Ready</h1>
+				<p>Drive Ready is a program designed to help attendees familiarize themselves with a technology and coding language of their choice. This hybrid mode of training ensures that every attendee is ready to ace every interview they attend.</p><br>
+				
+			</div>
+			<div style="height:550px;width:400px;float: right;">
+				<img src="images/s.jpg"><br>
+				<h1>Skill Up Coder</h1>
+				<p>The trainees get indulged in to the basic training on coding, related to the industry. The training aims at the student's overall development of coding skills as well as the comprehending ability to have a better communication skills and lead successfully in the world of competition.</p>
+			
+		</div>
+			
+		</div>
+		</div>
+	</div>
+
+
+
+
+	
+</body>
+</html>

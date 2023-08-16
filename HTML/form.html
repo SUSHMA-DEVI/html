@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+  <script>
+    function validateForm() {
+      var name = document.forms["myForm"]["name"].value;
+      var email = document.forms["myForm"]["email"].value;
+      var password = document.forms["myForm"]["password"].value;
+      var confirmpassword = document.forms["myForm"]["password"].value;
+      var message = document.forms["myForm"]["message"].value;
+
+      
+      
+      if (name == "") {
+        document.getElementById("nameError")
+        alert("Name must be filled out");
+        return false;
+      }
+      
+      if (email == "") {
+        alert("Email must be filled out");
+        return false;
+      }
+      if(password =="")
+      {
+        alert("password must be filled out");
+        return false;
+      }
+      if(confirmpassword !==password)
+      {
+        alert("incorrect password");
+        return false;
+      }
+      if(message =="")
+      {
+        alert("message must be filled out");
+        return false;
+      }
+      
+    }
+  </script>
+</head>
+<body>
+  <h2>Form Validation Example</h2>
+  <form name="myForm" onsubmit="return validateForm()" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email"><br><br>
+    <label for="password">Password:</label>
+    <input type="text" name="password"><br><br>
+    <label for="confirmpassword">confirmPassword:</label>
+    <input type="text" name="password"><br><br>
+    <label for="message">Message:</label>
+    <input type="text" name="message"><br><br>
+    <textarea>submit your form</textarea>
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Validation Form</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+  <script>
+    function validateForm() {
+      var isValid = true;
+      var name = document.forms["myForm"]["name"].value;
+      var email = document.forms["myForm"]["email"].value;
+      var password = document.forms["myForm"]["password"].value;
+      var message = document.forms["myForm"]["message"].value;
+      
+      if (name == "") {
+        document.getElementById("nameError").innerHTML = "Please enter your name";
+        isValid = false;
+      } else {
+        document.getElementById("nameError").innerHTML = "";
+      }
+      
+      if (email == "") {
+        document.getElementById("emailError").innerHTML = "Please enter your email";
+        isValid = false;
+      } else {
+        document.getElementById("emailError").innerHTML = "";
+      }
+      
+      if (password == "") {
+        document.getElementById("passwordError").innerHTML = "Please enter a password";
+        isValid = false;
+      } else {
+        document.getElementById("passwordError").innerHTML = "";
+      }
+      if(message=="")
+      {
+        document.getElementById("messageError").innerHTML="please enter a message";
+      }
+      else{
+        document.getElementById("messageError").innerHTML="" ;
+             }
+      
+      return isValid;
+    }
+  </script>
+</head>
+<body>
+  <h1>Validation Form</h1>
+  
+  <form name="myForm" onsubmit="return validateForm()" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name">
+    <span class="error" id="nameError"></span>
+    <br><br>
+    
+    <label for="email">Email:</label>
+    <input type="text" name="email">
+    <span class="error" id="emailError"></span>
+    <br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" name="password">
+    <span class="error" id="passwordError"></span>
+    <br><br>
+    
+    <label for="message">Message:</label>
+    <input type="message" name="message">
+    <span class="error" id="messageError"></span>
+    <br><br>
+
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>  -->

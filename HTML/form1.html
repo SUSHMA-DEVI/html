@@ -1,0 +1,98 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form with JavaScript Validation</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+<form id="registrationForm" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" >
+
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" >
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" >
+
+    <br><br>
+
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword">
+
+    <br><br>
+
+    <input type="submit" value="Register">
+</form>
+
+<script>
+    function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+
+        // Simple name validation: should not be empty and at least 3 characters long
+        if (name.length < 3) {
+            alert("Name must be at least 3 characters long.");
+            return false;
+        }
+
+        // Simple email validation: should not be empty and should have a valid email format
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+        if (password.length === 0) {
+            alert("Password cannot be empty.");
+            return false;
+        }
+
+        if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+
+        
+        return true;
+    }
+</script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Area Validation</title>
+</head>
+<body>
+
+<!-- <h2>Text Area Validation Example</h2> -->
+<h2>Form</h2>
+
+<form>
+    <label for="name">Name:</label>
+    <!-- <textarea id="name" name="name" rows="4" cols="50" required maxlength="200"></textarea><br> -->
+    <input type="name" name="name"required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br><br>
+    <!-- <textarea id="email" name="email" rows="4" cols="50" required maxlength="200"></textarea><br> -->
+    <label for="password">Password:</label>
+    <input type="password" name="password"required><br><br>
+    <!-- <textarea id="password" name="password" rows="4" cols="50" required maxlength="200"></textarea><br> -->
+    <label for="message">Message:</label>
+    <input type="message" name="message"required><br><br>
+    <!-- <textarea id="message" name="message" rows="4" cols="50" required maxlength="200"></textarea><br> -->
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

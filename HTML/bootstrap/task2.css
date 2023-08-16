@@ -1,0 +1,25 @@
+.row{
+	height: 100px;
+	border: 2px solid black;
+}
+.col-md-6{
+	border: 2px solid black;
+}
+.col-md-3{
+	border: 2px solid black;
+}
+.col-md-3{
+	border: 2px solid black;
+}
+.a{
+	margin: 30px;
+	margin-left: 500px;
+}
+.b{
+	margin: 30px;
+	margin-left: 200px;
+}
+.c{
+	margin: 30px;
+	margin-left: 100px;
+}
