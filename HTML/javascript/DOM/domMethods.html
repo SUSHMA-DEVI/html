@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p class="topic">HTML</p>
+	<p class="topic">CSS</p>
+	<p class="topic">BS</p>
+	<p class="topic">JS</p>
+	<ul>
+		<li>AEC</li>
+		<li>ACET</li>
+		<li>ACOE</li>
+
+	</ul>
+	<script type="text/javascript">
+		let para=document.getElementsByClassName('topic');
+		console.log(para);
+		para[0].innerHTML="lowerCase";
+		para[1].style.color="red";
+		para[2].style.color="green";
+		para[3].style.fontSize="50px";
+
+		let p1=document.getElementsByTagName('li');
+		console.log(p1);
+		p1[0].innerText='Aditya Engineering College';
+		p1[1].innerText='Aditya College of Engineering and Technology';
+		p1[2].innerText='Aditya College of Engineering';
+	</script>
+
+</body>
+</html>

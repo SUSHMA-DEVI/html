@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*table,td{
+			border: 1px solid black;
+		}*/
+	</style>
+</head>
+<body>
+	<table id="table" border="">
+		<tr>
+			<td >&nbsp;</td>
+			<td >&nbsp;</td>
+			<td >&nbsp;</td>
+		</tr>
+		<tr>
+			<td >&nbsp;</td>
+			<td >&nbsp;</td>
+			<td >&nbsp;</td>
+		</tr>
+		<tr>
+			<td >&nbsp;</td>
+			<td >&nbsp;</td>
+			<td >&nbsp;</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		 var x = document.getElementsByTagName('td');
+		 var k=9;
+		// console.log(x);
+		 for(var i=0;i<x.length;i++)
+		 {
+		 	//x[i].innerText=i+1;
+		 	//x[i].innerText=x.length-i;
+		 	x[i].innerText=k;
+		 	k--;
+		 }
+	</script>
+
+</body>
+</html>
