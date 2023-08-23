@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <h1>Number Guessing Game</h1>
+    <p>Click on one of the numbers below:</p>
+    <button id="number1"> 1</button>
+    <button id="number2"> 2</button>
+    <button id="number3"> 3</button>
+    <p id="result"></p>
+
+    <script>
+        // Generate a random number between 1 and 3
+        const winningNumber = Math.floor(Math.random() * 3) + 1;
+
+        // Get references to the buttons and result paragraph
+        const numberButtons = document.querySelectorAll('button[id^="number"]');
+        const resultParagraph = document.getElementById('result');
+
+        // Add click event listeners to each button
+        numberButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const clickedNumber = parseInt(button.textContent.split(' ')[1]);
+
+                if (clickedNumber === winningNumber) {
+                    resultParagraph.textContent = 'Congratulations! You win!';
+                    
+                } else {
+                    resultParagraph.textContent = 'Sorry, you lose. Try again!';
+
+                }
+            });
+        });
+        document.write("the value is ", winningNumber);
+
+    </script>
+</body>
+</html>

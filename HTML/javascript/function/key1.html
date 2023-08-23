@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Empty Input Message</title>
+</head>
+<body>
+	<label>EnterName</label>
+  <input type="text" id="inputBox">
+  <p id="errorMessage" style="color: red; display: none;">please filled input field</p>
+
+  <script>
+    const inputBox = document.getElementById("inputBox");
+    const errorMessage = document.getElementById("errorMessage");
+
+    inputBox.addEventListener("input", () => {
+      if (inputBox.value.trim() === "") {
+        errorMessage.style.display = "block";
+        inputBox.style.border="5px solid red"
+        
+      } else {
+        errorMessage.style.display = "none";
+       // inputBox.style.border="5px solid red"
+      }
+    });
+  </script>
+</body>

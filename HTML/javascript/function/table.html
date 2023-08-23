@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dynamic Table Creation</title>
+</head>
+<body>
+  <table id="dataTable" border="2">
+    <tr>
+      <th>Course name</th>
+      <th>course number</th>
+      <th>Course fees</th>
+      <th>Place</th>
+    </tr>
+    <tbody id="tbodyy">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+  	var data = [{
+			'name':'html',
+			'number':'23423',
+			'fees':'235',
+			'place':'dwp'
+		},
+		{
+			'name':'css',
+			'number':'65687',
+			'fees':'567',
+			'place':'dwp'
+		},
+		{
+			'name':'javascript',
+			'number':'67845',
+			'fees':'7656',
+			'place':'dwp'
+		}]
+
+    /*var table = document.getElementById("dataTable");
+
+    // Create rows and cells using a for loop
+    for (var i = 0; i < data.length; i++) {
+      var row = table.insertRow(i + 1); // Start from index 1 to skip the header row
+
+      var cellName = row.insertCell(0);
+      cellName.innerHTML = data[i].name;
+
+      var cellNumber = row.insertCell(1);
+      cellNumber.innerHTML = data[i].number;
+
+      var cellFees = row.insertCell(2);
+      cellFees.innerHTML = data[i].fees;
+
+      var cellPlace = row.insertCell(3);
+      cellPlace.innerHTML = data[i].place;
+    }*/
+    for(i=0;i<data.length;i++)
+    {
+      let tr =document.createElement('tr')
+      let td1=document.createElement('td')
+      let td2=document.createElement('td')
+      let td3=document.createElement('td')
+      let td4=document.createElement('td')
+      td1.innerText=data[i].name
+      td2.innerText=data[i].number
+      td3.innerText=data[i].fees
+      td4.innerText=data[i].place
+      tr.append(td1)
+      tr.append(td2)
+      tr.append(td3)
+      tr.append(td4)
+      document.getElementById('tbodyy').append(tr)
+    
+
+
+    }
+  </script>
+</body>
+</html>

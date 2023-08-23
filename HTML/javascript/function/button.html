@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<center>
+	<button onclick="incrby1()">Inc</button>
+	<button onclick="decrby1()">Dec</button>
+	<p id="pp">output</p>
+	</center>
+	<script type="text/javascript">
+		var i=1;
+		/*function incrby1(){
+			if(i<6){
+				document.getElementById('pp').innerText=i++
+
+			}
+		}
+		function decrby1(){
+			if(i>0){
+				document.getElementById('pp').innerText=i--
+
+
+			}
+			
+		}*/
+		function incrby1(){
+			if(i<6){
+				var res=i++;
+				document.getElementById('pp').innerHTML="<img src= 'images/"+res+".jpg' style='width:200px;height:200px'/>"
+
+			}
+		}
+		function decrby1(){
+			if(i>0){
+				var res=i--;
+				if(res!=6){
+					document.getElementById('pp').innerHTML="<img src= 'images/"+res+".jpg' style='width:200px;height:200px'/>"
+
+				}
+				
+
+			}
+			
+		}
+	</script>
+
+</body>
+</html>

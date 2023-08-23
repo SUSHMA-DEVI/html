@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!-- inline event handler -->
+	<!--<button onclick="test()">Click Here</button>-->
+	<button id="bton">Hide</button>
+	<div id="spn">sushma</div>
+	<button id="bton1">Show</button>
+	<!-- <div id="spn1">devi</div> -->
+	<script type="text/javascript">
+		// 1st way
+		/*function test()
+		{
+			//alert("testing.....")
+			document.body.style.background ='pink'
+		}*/
+
+		// 2nd way
+
+		/*let btn=document.getElementById('bton');
+		btn.onclick=function(){
+			alert("hi")
+			document.body.style.background='blue'
+		}
+*/
+		// 3rd way
+
+		/*let btn=document.getElementById('bton');
+		btn.addEventListener('click',test)
+		function test(){
+			alert("testing")
+			document.body.style.background='grey'
+		}*/
+
+		// anonymous function -- 4th way
+		/*let btn=document.getElementById('bton');
+		btn.addEventListener('click',function(){
+			alert("testing")
+			document.body.style.background='grey'
+		})*/
+
+		//hide and show
+
+		let btn =document.getElementById('bton');
+		btn.addEventListener('click',function(){
+			document.getElementById('spn').style.display='none'
+		})
+
+		let btn1 =document.getElementById('bton1');
+		btn1.addEventListener('click',function(){
+			document.getElementById('spn').style.display='block'
+		})
+		
+
+	</script>
+
+</body>
+</html>

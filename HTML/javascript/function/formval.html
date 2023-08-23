@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p>Enter some text in the fields below,then press the "submit form button to submit the form"</p>
+	<form id="myForm">
+		First name:<input type="text" name="Fname"><br><br>
+		Last name:<input type="text" name="lname"><br><br>
+		Date of Birth:<input type="date" name="birthday"><br><br>
+		Phone Number:<input type="tel" name="phone"><br><br>
+		Email:<input type="email" name="eamil"><br><br>
+		<!-- <fieldset data-role="controlgroup"> -->
+      	<legend>Choose your gender:</legend>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" checked>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+     <!--  </fieldset> --><br><br>
+
+		<select name="colleges">
+		<option>---select college ---</option>
+		<option value="AEC">AEC</option>
+		<option value="ACET">ACET</option>
+		<option value="ACOE">ACOE</option>
+	</select><br><br>
+	Address:<textarea name="address" ></textarea><br><br>
+
+	<input type="button" onclick="formsubmit()" value="submit">
+	</form>
+	<script type="text/javascript">
+		function formsubmit(){
+			let form =document.getElementById('myForm');
+			form.submit();
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style type="text/css">
+    .slideshow-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 50%;
+}
+
+.fade {
+  animation: fadeEffect 3s ease-in-out infinite;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="images/1.jpg" alt="Image 1">
+    </div>
+    <div class="slide fade">
+      <img src="images/images.png" alt="Image 2">
+    </div>
+    <div class="slide fade">
+      <img src="images/3.jpg" alt="Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="images/4.jpg" alt="Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="images/5.jpg" alt="Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="images/6.jpg" alt="Image 3">
+    </div>
+    <div class="slide fade">
+      <img src="images/7.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <!-- <script src="script.js"> -->
+    <script type="text/javascript">
+    let slideIndex = 0;
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+showSlides(); // Start the slideshow
+
+  </script>
+</body>
+</html>

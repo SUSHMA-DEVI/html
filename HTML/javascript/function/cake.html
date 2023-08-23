@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Hover Effect</title>
+  <style type="text/css">
+    #dd{
+      height: 300px;
+      width: 300px;
+      border: 1px solid black;
+    }
+    #image{
+      height: 300px;
+      width:300px ;
+    }
+  </style>
+</head>
+<body>
+  <center>
+  <div id="dd">
+    <img id="image" src="images/cake.png" alt="Image">
+  </div>
+  </center>
+  <script type="text/javascript">
+    
+    let image = document.getElementById('image');
+    let div = document.getElementById('dd');
+
+    div.addEventListener('mouseover',function () {
+    
+      image.src='images/cake1.png';
+
+    });
+
+    div.addEventListener('mouseout',function (){
+   
+      image.src='images/cake.png';
+    });
+
+  </script>
+</body>
+</html>
+<!-- type.html,cake.html,cuttingcake.html,key.html,gaming_num.html
+  Task1 - guess numbers game
+Task2 - cut cake
+Task3 - baloon
+Task4 - light on the candle
+Task5 - input validation
+Task6 - form validation
+ -->
