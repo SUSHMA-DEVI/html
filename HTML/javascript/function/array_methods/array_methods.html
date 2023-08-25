@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Array Methods | map() </h2>
+	<p>This method creates new array and return it after iteration will completed.</p>
+</body>
+<script type="text/javascript">
+	/*let trainess=['sushma','satya','deepika'];
+	let names =trainess.map(function(ele){
+		console.log(ele)
+	})*/
+	/*let trainess1=[{
+		'name':'sushma',
+		'rollno':'1234'
+	},
+	{
+		'name':'deepika',
+		'rollno':'1235'
+	}];
+
+	/*trainess1.map(function(individual_trainee,i,arr){
+		console.log(individual_trainee.name+" "+individual_trainee.rollno)
+	})
+
+
+
+	trainess1.map(test)
+	function test(individual_trainee,i,arr){
+		console.log(individual_trainee.name+" "+individual_trainee.rollno)
+	}*/
+	// tableformat, unorderlist,divformat 
+
+	// let salaries =[40000,25000,30000];
+	// console.log(salaries);
+	// salaries.forEach(function(amount,index,arr){
+	// 	var increment =amount/10;
+	// 	console.log(increment)
+	// 	arr[index]=amount+increment;
+	// });
+	// console.log(salaries);
+
+	//or
+	// salaries.forEach(test);
+	// function test(amount,index,arr){
+	// 	var increment =amount/10;
+	// 	console.log(increment)
+	// arr[index]=amount+increment;
+	// }
+	// console.log(salaries);
+
+	 let trainess = ['sushma','deepika','devi','satya'];
+	// let getonename =trainess.find(function(name){
+	// 	return name.startsWith('d');
+	// })
+	// console.log(getonename);
+	let getonename = trainess.find(test)
+	function test(name){
+		return name.startsWith('d');
+	}
+	console.log(getonename);
+
+
+
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Array Methods</h2>
+	<p>This method creates a new array</p>
+</body>
+<script type="text/javascript">
+	let nums=[8,9,10,11,12,34,9];
+	let even_nums=nums.filter(function(ele){
+		return ele%2 == 0
+
+	})
+	console.log(even_nums)
+	let odd_nums =nums.filter(function(ele,i,arr){
+		return ele%2 !=0
+	})
+	console.log(odd_nums)
+</script>
+</html>

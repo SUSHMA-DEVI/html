@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String Methods</title>
+</head>
+<body>
+	<h2>String Methods</h2>
+	<table border="" cellspacing="0" style="background-color:#ccc">
+		<tr>
+			<td>S</td>
+			<td>U</td>
+			<td>S</td>
+			<td>H</td>
+			<td>M</td>
+			<td>A</td>
+			<td>&nbsp;</td>
+			<td>D</td>
+			<td>E</td>
+			<td>E</td>
+			<td>P</td>
+			<td>I</td>
+			<td>K</td>
+			<td>A</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+			<td>13</td>
+		</tr>
+		<tr>
+			<td>-14</td>
+			<td>-13</td>
+			<td>-12</td>
+			<td>-11</td>
+			<td>-10</td>
+			<td>-9</td>
+			<td>-8</td>
+			<td>-7</td>
+			<td>-6</td>
+			<td>-5</td>
+			<td>-4</td>
+			<td>-3</td>
+			<td>-2</td>
+			<td>-1</td>
+		</tr>
+	</table>
+	<script type="text/javascript">
+		function getstr(str){
+			document.write("<b>"+str+"</b><br>")
+		}
+		let name ='SUSHMA DEEPIKA';
+		/*getstr(name)
+		getstr(name.length) // find the length of the string - length -- output:14
+		getstr(name.charAt(10))
+		getstr(name.indexOf('E'))
+		getstr(name.indexOf('DEEPIKA'))*/
+		/*getstr("Original String = "+name)
+		getstr("String length = "+name.length)
+		getstr("Char At = "+name.charAt(2))
+		getstr("Index of = "+name.indexOf('P')) // position
+		getstr("Index of 2nd way = "+name.indexOf('DEEPIKA')) //position 
+		getstr("Last Index of String = "+name.lastIndexOf('E'))*/
+
+
+		let name1=' SUSHMA'
+		let name2=' deepika'
+		getstr("To Lower Case = "+name1.toLowerCase())
+		getstr("To Upper Case = "+name2.toUpperCase())
+		let name3 =' batch';
+		let name4=' FN';
+		let name5=' FSD';
+		getstr("Concate of string = "+name1.concat(name3))
+		getstr("Concate of string = "+name1.concat(name3,name4,name5))
+		let username=' sushma '
+		getstr("trim() method= "+username.trim())
+
+
+		// split() -- converting string into an array => stringname.split()
+		/*let namee = 'sushma&deepika,mouni';
+		console.log(namee.split("&")); 
+		console.log(namee.split(",")); */
+
+		//starts with ends with
+		/*let name6 = 'sushma'
+		console.log(name6.startsWith('s')) // it returns only boolean value like true or false
+		console.log(name6.endsWith('m'))
+		console.log(name6.startsWith('u'))
+		console.log(name6.endsWith('a'))
+*/
+		// slice method
+
+		/*getstr('slice of string ='+name.slice(2,6)); // in between 2 to 6
+		getstr('slice of string ='+name.slice(-2)); // it will go -2,-1
+		getstr('slice of string ='+name.slice(-4,-1));
+		getstr('slice of string = '+name.substring(1,5));
+		getstr('slice of string = '+name.substring(5,1));
+		getstr('slice of string = '+name.substring(-1));
+		getstr('sice of substr = '+name.substr(0,5));*/ //length of the characters for first position
+
+
+
+
+		//includes method
+		//getstr('includes of string ='+name.includes('DEEPIKA'));
+
+		//charCodeAt method -- for finding the ascii code values
+		//getstr('charCodeAt of string= '+name.charCodeAt(''));
+
+		//repeat method---
+		getstr('repeat of string ='+name5.repeat('5'))
+
+		//replace method --
+		getstr('replace of string ='+name.replace('SUSHMA','mounika'));
+
+
+		
+	</script>
+
+</body>
+</html>
