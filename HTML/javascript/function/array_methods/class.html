@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Constructor</h2>
+	<script type="text/javascript">
+		class Student{
+			constructor(rno,fname,lname){
+				this.rollno = rno;
+				this.firstname = fname;
+				this.lastname = lname;
+				this.getfullname = function(){
+					return this.firstname+" "+this.lastname
+				}
+			}
+		}
+		// let Obj = new Student(1234,'sushma','p')
+		// console.log(Obj.rollno,Obj.firstname,Obj.lastname)
+		let Obj = new Student(1234,'sushma','p')
+		console.log(Obj.getfullname())
+
+
+
+
+
+		/*class car{
+			constructor(brand,color,cost)
+			{
+				this.brand=brand;
+				this.color=color;
+				this.cost=cost;
+				this.getfullname = function(){
+					return this.brand+" "+this.color
+				}
+			}
+		}
+			/*let a = new car('KIA','grey','10L')
+			console.log(a.brand,"",a.color,"",a.cost) */
+		// let a = new car('KIA','grey','10L')
+		// console.log(a.getfullname())*/
+
+
+
+	</script>
+
+</body>
+</html>

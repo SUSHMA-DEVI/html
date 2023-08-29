@@ -1,0 +1,41 @@
+<!-- tableformat, unorderlist,divformat --> 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<table id="keyValueTable" border="">
+  <tr>
+    <th>Key</th>
+    <th>Value</th>
+  </tr>
+</table>
+
+<script>
+const keyValueArray = [
+  { key: 'name', value: 'sushma' },
+  { key: 'age', value: 20 },
+  { key: 'city', value: 'mallavaram' },
+  { key: 'name', value: 'bhavya' },
+  { key: 'age', value: 20 },
+  { key: 'city', value: 'rjy' }
+];
+
+const table = document.getElementById('keyValueTable');
+
+keyValueArray.forEach(pair => {
+  const row = table.insertRow();
+  const keyCell = row.insertCell(0);
+  const valueCell = row.insertCell(1);
+
+  keyCell.textContent = pair.key;
+  valueCell.textContent = pair.value;
+});
+</script>
+
+
+</body>
+</html>

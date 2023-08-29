@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Regular Expression</h2>
+	<input type="text" name="" id="in_id">
+	<button onclick="check_character">click</button>
+	<script type="text/javascript">
+		/*let re=/batch/;
+		let output =re.test("fullstack batch");
+		console.log(output)*/
+
+		/*let re1=/batch/i;
+		let output1=re1.test("fullstack BATCH");
+		console.log(output1);
+*/
+		/*let re=/^b/;//(^) this symbl is used for check the letter is first place or not.
+		let output=re.test("batch");
+		console.log(output);*/
+
+		/*let a="batch";
+		re11=new RegExp('{a}')
+		let output1 = re11.test("fullstack batch");
+		console.log(output1)*/
+
+		/*let re =/batch/g; // g is multiple indexes
+		let res=re.exec("full stack course batch");
+		console.log(res);
+		console.log(res.index)
+		res=re.exec("full stack batch course batch");
+		console.log(res.index)*/
+
+		//number
+		let re=/^[0-9]{10}/
+		let output=re.test("9876543210"); // correct => true
+		let output =re.test("9876543210763735735"); // wrong =>true
+		console.log(output)
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

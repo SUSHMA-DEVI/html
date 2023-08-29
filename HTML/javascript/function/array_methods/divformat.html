@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div id="keyValuePairs">
+</div>
+
+<script>
+const keyValueArray = [
+  { key: 'name', value: 'sushma' },
+  { key: 'age', value: 20 },
+  { key: 'city', value: 'mallavaram' },
+  { key: 'name', value: 'bhavya' },
+  { key: 'age', value: 20 },
+  { key: 'city', value: 'rjy' }
+];
+
+const keyValuePairsDiv = document.getElementById('keyValuePairs');
+
+keyValueArray.forEach(pair => {
+  const pairDiv = document.createElement('div');
+  pairDiv.className = 'key-value-pair';
+
+  const keyDiv = document.createElement('div');
+  keyDiv.className = 'key';
+  keyDiv.textContent = `${pair.key}:`;
+
+  const valueDiv = document.createElement('div');
+  valueDiv.className = 'value';
+  valueDiv.textContent = pair.value;
+
+  pairDiv.appendChild(keyDiv);
+  pairDiv.appendChild(valueDiv);
+
+  keyValuePairsDiv.appendChild(pairDiv);
+});
+</script>
+
+
+</body>
+</html>

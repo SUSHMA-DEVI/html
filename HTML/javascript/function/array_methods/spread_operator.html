@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>spread operator</title>
+</head>
+<body>
+	<h2>spread operator</h2>
+	<p>it takes an iteration and expands or sepeartes each element.</p>
+	<p>notation as ...(triple dots)</p>
+<script type="text/javascript">
+	// 1st way
+	let arr=[12,23,34,45,56];
+	console.log("here array prints:"+arr);
+	console.log("here array elements separately prints by using spreadopertor:")
+	console.log(...arr);
+	console.log(arr.join(" "));
+	// 2nd way
+	// let arr1=[2,4,arr];
+	let arr1=[2,4,...arr];
+	console.log(arr1);
+    console.log(...arr1);
+    // 3rd way
+    let s="FULLSTACK";
+    console.log("string is:"+s);
+    console.log("in string each character is printed by using ...");
+    console.log(...s);
+    // 4th way
+    let a1=[1,2,3,4];
+    let a2=[5,6,7,8];
+    console.log(a1,a2);
+     console.log(...a1,...a2);
+    // console.log(...a1,10,20,30,40,...a2,50,60,70,80);
+     let a3=[...a1,10,20,30,40,...a2,50,60,70,80];
+     console.log(...a3);
+     // 5th way
+     let a4=[65,65,65,65];
+     function add(a,b,c,d){
+     	let sum=a+b+c+d;
+     	console.log("sum is:"+sum);
+     }
+    // add(a4[0],a4[1],a4[2],a4[3]);
+     add(...a4)//add(1,2,3,4)
+</script>
+</body>
+</html>
